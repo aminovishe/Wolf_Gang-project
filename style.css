@@ -1,0 +1,204 @@
+@font-face {
+  font-family: Bodega;
+  src: url(fonts/BodegaSans_Black.ttf);
+}
+*{
+	box-sizing: border-box;
+	font-family: Bodega, sans-serif;
+}
+body, html{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(img/bg_body.svg) repeat;
+	background-color: #444444;
+}
+main{
+	max-width: 85%;
+	margin: auto;
+}
+h1, h2{
+	text-transform: uppercase;
+	color: white;
+	font-weight: normal;
+}
+article > h2{
+	border-top: 3px solid #303030;
+	border-left: 3px solid #303030;
+	padding: 0.5em;
+}
+ul{
+	padding-left:  0;
+}
+a, a:visited, a:active{
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	color: #FF9D00;
+}
+li{
+	list-style: none;
+}
+span:not(.lic){
+	color: #FF9D00;
+}
+
+/*------header---------*/
+header{
+	overflow: auto;
+	background-image: linear-gradient(-45deg, black 0 50%, white 50% 100%);
+}
+header img{
+	width: 150px;
+	margin-top: 1em;
+	margin-left: 5em;
+}
+header nav{
+	display: inline-block;
+	float: right;
+	margin-top: 1em;
+	margin-right: 5em;
+}
+nav ul li{
+	padding: 0.3em;
+}
+nav ul li a{
+	color: white;
+}
+
+/*------Main-------*/
+#slider{
+	text-align: center;
+}
+#slider h1{
+	margin: 2em;
+}
+
+.team{
+	width: 22%;
+	display: inline-block;
+	text-align: center;
+	background-color: white;
+	padding: 1em;
+}
+.marge{
+	margin-right: 3%;
+}
+.team img{
+	width: 100%;
+}
+.team h2, .team hr{
+	color: #FF9D00;
+}
+.team a{
+	text-align: center;
+	padding: 0.5em 0;
+	margin-left: 0;
+	margin-right: 0;
+	display: block;
+	background-color: #FF9D00;
+	color: white;
+}
+.team hr{
+	border: 1px solid #FF9D00;
+}
+#contact{
+	padding-bottom: 3em;
+}
+
+#contact div{
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	padding-right: 1em;
+}
+#contact video{
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+}
+#contact div i{
+	margin: 1em;
+}
+
+/*--------footer--------*/
+footer{
+	-webkit-box-shadow: 0px -4px 14px 0px #000000; 
+	box-shadow: 0px -4px 14px 0px #000000;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	padding: 2em;
+}
+footer h1{
+	font-size: 1em;
+}
+footer ul li{
+	display: inline-block;
+	padding: 0 1em;
+}
+
+
+
+/*-------LICENCE-------*/
+#licence {
+    display: block;
+    text-align: center;
+    padding: 0 25px 25px 25px;
+    margin-top: 2rem;
+    color: white !important;
+}
+
+#licence img {
+    width: 50px;
+}
+#licence p{
+    font-size: 10px;
+}
+
+/*------Media Queries------------*/
+
+@media screen and (max-width: 1024px){
+	.team{
+		width: 100%;
+		margin: 1em 0;
+	}
+	#contact div, #contact video{
+		width: 100%;
+	}
+	#contact div{
+		text-align: center;
+	}
+	#contact div i{
+		display: block;
+	}
+	footer{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
+
+@media screen and (max-width: 640px){
+	header{
+		background-image: linear-gradient(150deg, white 0 50%, black 40% 100%);
+		text-align: center;
+	}
+	header img{
+		float: left;
+		margin-bottom: 20%;
+		margin-left: 20%;
+	}
+	header nav{
+		float: none;
+		display: block;
+		text-align: right;
+		clear: both;
+		margin-right: 10%;
+	}
+	header nav ul li{
+		margin: 10% 0;
+	}
+}
